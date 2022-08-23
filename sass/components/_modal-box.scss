@@ -1,0 +1,35 @@
+.modal-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background-color: var(--main-color);
+    padding: 40px;
+}
+
+.modal-box__btn_close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+
+.modal-box__icon {
+    transition: fill var(--duration) var(--timing-function);
+
+    .modal-box__btn_close:hover &,
+    .modal-box__btn_close:focus & {
+        fill: var(--accent-color);
+    }
+}
+
