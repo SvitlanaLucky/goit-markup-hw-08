@@ -177,38 +177,89 @@
         </div>
       </section>
 
-      <!-- <section class="section section_no-padding-top">
+      <section class="section section_no-padding-top">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="img-box list">
             <li class="img-box__item">
-              <img src="./images/what-do/keyboard.jpg" alt="клавіатура" width="370" height="294" />
+              <img
+                srcset="
+                  ./images/desktop/services/keyboard-370/keyboard-370.jpg    1x,
+                  ./images/desktop/services/keyboard-370/keyboard-370@2x.jpg 2x
+                "
+                src="./images/what-do/keyboard.jpg"
+                alt="клавіатура"
+                width="370"
+                height="294"
+              />
               <p class="img-box__text">Десктопні додатки</p>
             </li>
             <li class="img-box__item">
-              <img src="./images/what-do/laptop.jpg" alt="ноутбук" width="370" height="294" />
+              <img
+                srcset="
+                  ./images/desktop/services/laptop-370/laptop-370.jpg    1x,
+                  ./images/desktop/services/laptop-370/laptop-370@2x.jpg 2x
+                "
+                src="./images/what-do/laptop.jpg"
+                alt="ноутбук"
+                width="370"
+                height="294"
+              />
               <p class="img-box__text">Мобільні додатки</p>
             </li>
             <li class="img-box__item">
-              <img src="./images/what-do/tablet.jpg" alt="планшет" width="370" height="294" />
+              <img
+                srcset="
+                  ./images/desktop/services/tablet-370/tablet-370.jpg    1x,
+                  ./images/desktop/services/tablet-370/tablet-370@2x.jpg 2x
+                "
+                src="./images/what-do/tablet.jpg"
+                alt="планшет"
+                width="370"
+                height="294"
+              />
               <p class="img-box__text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- team -->
-      <!-- <section class="section section_other-background">
+      <section class="section section_other-background">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team list">
             <li class="team__item">
-              <img
-                src="./images/employees/igor.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/team/igor-450/igor-450.jpg    1x,
+                    ./images/mobile/team/igor-450/igor-450@2x.jpg 2x
+                  "
+                  media="(max-width: 797px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team/igor-450/igor-450.jpg    1x,
+                    ./images/mobile/team/igor-450/igor-450@2x.jpg 2x
+                  "
+                  media="(max-width: 797px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team/igor-450/igor-450.jpg    1x,
+                    ./images/mobile/team/igor-450/igor-450@2x.jpg 2x
+                  "
+                  media="(max-width: 797px)"
+                />
+                <img
+                  src="./images/employees/igor.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="team__wrapper">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
@@ -362,7 +413,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- clients -->
       <!-- <section class="section">
