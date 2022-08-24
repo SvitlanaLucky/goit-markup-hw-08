@@ -1,6 +1,55 @@
-// .page-header {
-//     border-bottom: 1px solid #ECECEC;
-// }
+@media screen and (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+
+    .contacts {
+        display: none;
+    }
+
+    .mobile-menu-open {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        height: 40px;
+    }
+}
+
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.page-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+.mobile-menu-open {
+    display: none;
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+
+
+}
+
+
+
 
 // .page-header__container {
 //     display: flex;
