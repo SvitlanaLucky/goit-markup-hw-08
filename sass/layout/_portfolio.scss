@@ -1,7 +1,20 @@
 .portfolio-nav {
     display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
+
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+        row-gap: 15px;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 }
 
 .portfolio-nav__item:not(:last-child) {
@@ -33,6 +46,16 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+.portfolio-cards__item {
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 60px) / 3);
+    }
 }
 
 .portfolio-cards__box {

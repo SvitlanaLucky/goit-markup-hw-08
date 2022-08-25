@@ -64,6 +64,60 @@
             >
           </li>
         </ul>
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-menu-open__icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/sprite.svg#icon-Vector"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+              <a class="link mobile-menu__link" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="link mobile-menu__link mobile-menu__link_current" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="link mobile-menu__link" href="">Контакти</a>
+            </li>
+          </ul>
+          <ul class="mobile-contacts list">
+            <li class="mobile-contacts__item">
+              <a class="link mobile-contacts__link" href="tel:+380961111111"> +38 096 111 11 11 </a>
+            </li>
+            <li class="mobile-contacts__item">
+              <a
+                class="link mobile-contacts__link mobile-contacts__link_change"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-socials list">
+            <li class="mobile-socials__item">
+              <a href="" class="mobile-socials__link link" target="_blank">Instagram</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="mobile-socials__link link" target="_blank">Twitter</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="mobile-socials__link link" target="_blank">Facebook</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="mobile-socials__link link" target="_blank">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -94,12 +148,31 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link link">
                 <div class="portfolio-cards_overlay">
-                  <img
-                    src="./images/portfolio/technocrack.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/technocryak-450/technocryak-450.jpg    1x,
+                        ./images/mobile/portfolio/technocryak-450/technocryak-450@2x.jpg 2x
+                      "
+                      media="(max-width: 797px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/technokryak-354/technokryak-354.jpg    1x,
+                        ./images/tablet/portfolio/technokryak-354/technokryak-354@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/technokryak-370/technokryak-370.jpg    1x,
+                        ./images/desktop/portfolio/technokryak-370/technokryak-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/portfolio/technocrack.jpg" alt="Технокряк" />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -115,7 +188,31 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link link">
                 <div class="portfolio-cards_overlay">
-                  <img src="./images/portfolio/poster.jpg" alt="Постер" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/poster-450/poster-450.jpg    1x,
+                        ./images/mobile/portfolio/poster-450/poster-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/poster-354/poster-354.jpg    1x,
+                        ./images/tablet/portfolio/poster-354/poster-354@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/poster-370/poster-370.jpg     1x,
+                        ./images/desktop/portfolio/poster-370/poster--370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/portfolio/poster.jpg" alt="Постер" />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -133,12 +230,31 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link link">
                 <div class="portfolio-cards_overlay">
-                  <img
-                    src="./images/portfolio/seafood.jpg"
-                    alt="Ресторан"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/seafood-450/seafood-450.jpg    1x,
+                        ./images/mobile/portfolio/seafood-450/seafood-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/seafood-354/seafood-354.jpg    1x,
+                        ./images/tablet/portfolio/seafood-354/seafood-354@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/seafood-370/seafood-370.jpg    1x,
+                        ./images/desktop/portfolio/seafood-370/seafood-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/portfolio/seafood.jpg" alt="Ресторан" />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -154,12 +270,22 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link link">
                 <div class="portfolio-cards_overlay">
-                  <img
-                    src="./images/portfolio/prime.jpg"
-                    alt="навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/mobile/portfolio/prime-450/prime-450.jpg 1x, ./images/mobile/portfolio/prime-450/prime-450@2x.jpg 2xx "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/tablet/portfolio/prime-354/prime-354.jpg 1x, ./images/tablet/portfolio/prime-354/prime-354@2x.jpg 2xx "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/desktop/portfolio/prime-370/prime-370.jpg 1x, ./images/desktop/portfolio/prime-370/prime-370@2x.jpg 2xx "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/portfolio/prime.jpg" alt="навушники" />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -175,7 +301,31 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link link">
                 <div class="portfolio-cards_overlay">
-                  <img src="./images/portfolio/boxes.jpg" alt="коробки" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/boxes-450/boxes-450.jpg    1x,
+                        ./images/mobile/portfolio/boxes-450/boxes-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/boxes-354/boxes-354.jpg    1x,
+                        ./images/tablet/portfolio/boxes-354/boxes-354@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/boxes-370/boxes-370.jpg    1x,
+                        ./images/desktop/portfolio/boxes-370/boxes-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/portfolio/boxes.jpg" alt="коробки" />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -191,12 +341,31 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link link">
                 <div class="portfolio-cards_overlay">
-                  <img
-                    src="./images/portfolio/inspiration.jpg"
-                    alt="монітор"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/inspiration-450/inspiration-450.jpg    1x,
+                        ./images/mobile/portfolio/inspiration-450/inspiration-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/inspiration-354/inspiration-354.jpg    1x,
+                        ./images/tablet/portfolio/inspiration-354/inspiration-354@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/inspiration-370/inspiration-370.jpg    1x,
+                        ./images/desktop/portfolio/inspiration-370/inspiration-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/portfolio/inspiration.jpg" alt="монітор" />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -212,7 +381,31 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link link">
                 <div class="portfolio-cards_overlay">
-                  <img src="./images/portfolio/limited.jpg" alt="книга" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/limited-450/limited-450.jpg    1x,
+                        ./images/mobile/portfolio/limited-450/limited-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/limited-354/limited-354.jpg    1x,
+                        ./images/tablet/portfolio/limited-354/limited-354@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/limited-370/limited-370.jpg    1x,
+                        ./images/desktop/portfolio/limited-370/limited-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/portfolio/limited.jpg" alt="книга" />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -230,7 +423,31 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link link">
                 <div class="portfolio-cards_overlay">
-                  <img src="./images/portfolio/lab.jpg" alt="бірка" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/lab-450/lab-450.jpg    1x,
+                        ./images/mobile/portfolio/lab-450/lab-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/lab-354/lab-354.jpg    1x,
+                        ./images/tablet/portfolio/lab-354/lab-354@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/lab-370/lab-370.jpg    1x,
+                        ./images/desktop/portfolio/lab-370/lab-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/portfolio/lab.jpg" alt="бірка" />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -246,12 +463,31 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link link">
                 <div class="portfolio-cards_overlay">
-                  <img
-                    src="./images/portfolio/growing.jpg"
-                    alt="ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio/growing-450/growing-450.jpg    1x,
+                        ./images/mobile/portfolio/growing-450/growing-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio/growing-354/growing-354.jpg    1x,
+                        ./images/tablet/portfolio/growing-354/growing-354@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/growing-370/growing-370.jpg    1x,
+                        ./images/desktop/portfolio/growing-370/growing-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/portfolio/growing.jpg" alt="ноутбук" />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -355,5 +591,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
