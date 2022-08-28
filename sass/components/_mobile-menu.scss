@@ -77,7 +77,12 @@
     color: var(--accent-color);
 }
 
-.mobile-contacts {
+// .mobile-contacts {
+//     margin-bottom: 64px;
+// }
+
+.mobile-contacts__item:last-child {
+    margin-top: 32px;
     margin-bottom: 64px;
 }
 
@@ -94,7 +99,6 @@
     font-size: 24px;
     line-height: 1.17;
     color: var(--secondary-text-color);
-    margin-top: 32px;
 }
 
 .mobile-socials {

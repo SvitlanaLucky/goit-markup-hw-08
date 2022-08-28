@@ -369,7 +369,8 @@ img {
   .mobile-menu__link_current {
     color: var(--accent-color);
   }
-  .mobile-contacts {
+  .mobile-contacts__item:last-child {
+    margin-top: 32px;
     margin-bottom: 64px;
   }
   .mobile-contacts__link {
@@ -384,7 +385,6 @@ img {
     font-size: 24px;
     line-height: 1.17;
     color: var(--secondary-text-color);
-    margin-top: 32px;
   }
   .mobile-socials {
     display: flex;
